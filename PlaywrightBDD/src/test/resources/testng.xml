@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite" verbose="1" parallel="classes" thread-count="5">
+    <test name="Sample Application" >
+        <classes>
+            <class name="runner.TestRunner" />
+        </classes>
+    </test>
+</suite>
+
+<!-- <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">: This is a document type declaration that specifies the
+version and location of the TestNG DTD (Document Type Definition) file. It tells the parser how to interpret the
+XML file.-->
+
+<!--<suite name="Test Suite" verbose="1" parallel="classes" thread-count="5">: This defines a TestNG suite named
+"Test Suite" with the following attributes:-->
+
+<!--name: The name of the suite.-->
+<!--verbose: The level of output verbosity (1 typically means minimal output).-->
+<!--parallel: It specifies that test classes should run in parallel.-->
+<!--thread-count: Specifies the number of threads to be used for parallel execution (in this case, 5 threads).-->
+<!--<test name="Techpro Application">: This defines a test case named "Test Application" within the suite.-->
+
+<!--    <classes>: This is a container for specifying which Java classes should be included in the test.-->
+
+<!--        <class name="runner.TestRunner" />: This specifies that the test class named "TestRunner"
+(located in the "runner" package) should be executed as part of this test. TestNG will locate this class and run the
+test methods inside it.-->
+
+<!--        In summary, this XML configuration file is used to define a TestNG suite named "Test Suite" that runs a
+test case named "Test Application." It specifies that the test should run in parallel with 5 threads and uses the
+"TestRunner" class as the entry point for executing the tests.-->
